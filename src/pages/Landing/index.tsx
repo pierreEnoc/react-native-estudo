@@ -6,6 +6,7 @@ import styles from './styles';
 import symbolicateStackTrace from 'react-native/Libraries/Core/Devtools/symbolicateStackTrace';
 import studyIcon from '../../assets/images/icons/study.png';
 import givClassIcon from '../../assets/images/icons/give-classes.png';
+import heartIcon from '../../assets/images/icons/heart.png';
 
 function Landing() {
     return (
@@ -30,6 +31,10 @@ function Landing() {
                 <Text style={styles.buttonText}>Dar aulas</Text>
             </TouchableOpacity>
         </View>
+        <Text style= {styles.totalConnections}>
+            Total de 285 connexões já realizadas {' '}
+            <Image source={heartIcon} />
+        </Text>
     </View >
    );
 }
