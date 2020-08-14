@@ -1,7 +1,11 @@
 import React from 'react';
-import { View, Image, Text } from 'react-native'
+
+import { View, Image, Text, TouchableOpacity } from 'react-native'
 import landingImg from '../../assets/images/landing.png';
 import styles from './styles';
+import symbolicateStackTrace from 'react-native/Libraries/Core/Devtools/symbolicateStackTrace';
+import studyIcon from '../../assets/images/icons/study.png';
+import givClassIcon from '../../assets/images/icons/give-classes.png';
 
 function Landing() {
     return (
@@ -10,8 +14,22 @@ function Landing() {
 
         <Text style={styles.title}>
             Seja bem-vindo, {'\n'}
-            <Text style= {styles.titleBold}> O que deseja fazer?</Text>
+            <Text style= {styles.titeleBold}> O que deseja fazer?</Text>
         </Text>  
+
+        <View style= {styles.buttonsContainer}>
+            <TouchableOpacity style={[styles.button, styles.buttonPrimary]}>
+                <Image source={studyIcon}/>
+
+                <Text style={styles.buttonText}>Estudar</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={[styles.button, styles.buttonSecondary]}>
+                <Image source={studyIcon}/>
+
+                <Text style={styles.buttonText}>Dar aulas</Text>
+            </TouchableOpacity>
+        </View>
     </View >
    );
 }

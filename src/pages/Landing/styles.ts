@@ -25,6 +25,16 @@ const styles = StyleSheet.create ({
     titeleBold: {
     fontFamily: 'Poppins_600SemiBold'
     },
+
+    buttonsContainer: {
+        flexDirection: 'row',
+        marginTop: 40,
+        justifyContent: 'space-between',
+    },
+
+    button: {
+
+    },
 });
 
 export default styles;
