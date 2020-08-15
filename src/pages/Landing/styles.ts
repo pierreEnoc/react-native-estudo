@@ -22,7 +22,7 @@ const styles = StyleSheet.create ({
         marginTop: 80,
     },
 
-    titeleBold: {
+    titleBold: {
     fontFamily: 'Poppins_600SemiBold'
     },
 
