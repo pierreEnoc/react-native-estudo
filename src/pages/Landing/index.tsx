@@ -50,7 +50,7 @@ function Landing() {
             </RectButton>
         </View>
         <Text style= {styles.totalConnections}>
-        Total de 285 connexões já realizadas {''}
+        Total de 285 connexões já realizadas {' '}
             <Image source={heartIcon} />
         </Text>
     </View >
