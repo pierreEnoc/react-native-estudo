@@ -5,7 +5,6 @@ import landingImg from '../../assets/images/landing.png';
 import { RectButton } from 'react-native-gesture-handler';
 import styles from './styles';
 
-import symbolicateStackTrace from 'react-native/Libraries/Core/Devtools/symbolicateStackTrace';
 import studyIcon from '../../assets/images/icons/study.png';
 import givClassIcon from '../../assets/images/icons/give-classes.png';
 import heartIcon from '../../assets/images/icons/heart.png';
@@ -16,6 +15,10 @@ function Landing() {
 
     function handleNavigationToGiveClassesPage() {
         navigate('GiveClasses');
+    }
+    
+    function handlerNavigateToStudyPages() {
+        navigate('Study');
     }
 
     return (
@@ -28,17 +31,19 @@ function Landing() {
         </Text>  
 
         <View style= {styles.buttonsContainer}>
-            <RectButton style={[styles.button, styles.buttonPrimary]}>
-                <Image source={studyIcon}/>
+            <RectButton 
+            onPress ={handlerNavigateToStudyPages}
+            style={[styles.button, styles.buttonPrimary]}
+            >
+             <Image source={studyIcon}/>
 
-                <Text style={styles.buttonText}>Estudar</Text>
+             <Text style={styles.buttonText}>Estudar</Text>
             </RectButton>
 
             <RectButton 
                 onPress ={handleNavigationToGiveClassesPage} 
                 style={[styles.button, styles.buttonSecondary]}
                 >
-
                 <Image source={studyIcon}/>
 
                 <Text style={styles.buttonText}>Dar aulas</Text>
