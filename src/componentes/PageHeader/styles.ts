@@ -7,10 +7,16 @@ const styles = StyleSheet.create({
 
    },
 
-   topBAr: {
+   topBar: {
        flexDirection: 'row',
        alignItems: 'center',
-       justifyContent: 'space-between'
+       justifyContent: 'space-between',
+   },
+
+   header: {
+       flexDirection: 'row',
+       alignItems: 'center',
+       justifyContent: 'space-between',
 
    },
 
